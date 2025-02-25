@@ -30,6 +30,8 @@
         {
             btnNewGame = new Button();
             lblResultMessage = new Label();
+            lblXWin = new Label();
+            lblOWin = new Label();
             SuspendLayout();
             // 
             // btnNewGame
@@ -52,11 +54,33 @@
             lblResultMessage.TabIndex = 1;
             lblResultMessage.Text = "WinResult";
             // 
+            // lblXWin
+            // 
+            lblXWin.AutoSize = true;
+            lblXWin.Location = new Point(220, 10);
+            lblXWin.Name = "lblXWin";
+            lblXWin.Size = new Size(17, 15);
+            lblXWin.TabIndex = 2;
+            lblXWin.Text = "X:";
+            lblXWin.Click += label1_Click;
+            // 
+            // lblOWin
+            // 
+            lblOWin.AutoSize = true;
+            lblOWin.Location = new Point(2, 9);
+            lblOWin.Name = "lblOWin";
+            lblOWin.Size = new Size(19, 15);
+            lblOWin.TabIndex = 3;
+            lblOWin.Text = "O:";
+            lblOWin.Click += label2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(270, 236);
+            Controls.Add(lblOWin);
+            Controls.Add(lblXWin);
             Controls.Add(lblResultMessage);
             Controls.Add(btnNewGame);
             Name = "Form1";
@@ -70,5 +94,7 @@
 
         private Button btnNewGame;
         private Label lblResultMessage;
+        private Label lblXWin;
+        private Label lblOWin;
     }
 }

@@ -4,6 +4,9 @@ namespace TicTacTou
     {
         private Button[,] _boxes = new Button[3, 3];
         private bool _isXTurn = true;
+        private int _countX = 1;
+        private int _countY = 1;
+
         public Form1()
         {
             GenerateBoxes();
@@ -27,6 +30,7 @@ namespace TicTacTou
 
                     _boxes[i, j] = box;
                     Controls.Add(box);
+
                 }
             }
         }
@@ -40,13 +44,16 @@ namespace TicTacTou
             if (box.Text != "")
                 return;
 
+
             box.Text = _isXTurn ? "X" : "O";
             _isXTurn = !_isXTurn;
             CheckWin();
+
         }
         private void CheckWin()
         {
             // row checking..
+
             for (int i = 0; i < 3; i++)
             {
                 bool isWin = _boxes[i, 0].Text == _boxes[i, 1].Text &&
@@ -57,6 +64,15 @@ namespace TicTacTou
                     ChangeColor([_boxes[i, 0], _boxes[i, 1], _boxes[i, 2]]);
                     //MessageBox.Show($"{_boxes[i, 0].Text}  Win !!!");
                     lblResultMessage.Text = $"{_boxes[i, 0].Text}  Win !!!";
+                    if(_boxes[i, 0].Text=="X")
+                    {
+                      lblXWin.Text = $"{_boxes[i, 0].Text}{_countX++}";
+
+                    }
+                    else if(_boxes[i, 0].Text == "O")
+                    {
+                        lblOWin.Text= $"{_boxes[i, 0].Text}{_countY++}";
+                    }
 
                     return;
                 }
@@ -75,13 +91,26 @@ namespace TicTacTou
                     //MessageBox.Show($"{_boxes[0, i].Text}  Win !!!");
                     lblResultMessage.Text = $"{_boxes[0, i].Text}  Win !!!";
 
+                    if (_boxes[0, i].Text == "X")
+                    {
+                        lblXWin.Text = $"{_boxes[0, i].Text}{_countX++}";
+
+                    }
+                    else if (_boxes[0, i].Text == "O")
+                    {
+                        lblOWin.Text = $"{_boxes[0, i].Text}{_countY++}";
+                    }
+
+
                     return;
                 }
             }
 
             //diagonal checking..
+
             for (int i = 0; i < 3; i++)
             {
+
                 bool isDiagonalWin = _boxes[0, 0].Text == _boxes[1, 1].Text && _boxes[1, 1].Text == _boxes[2, 2].Text
                     && _boxes[0, 0].Text != "";
 
@@ -90,6 +119,16 @@ namespace TicTacTou
                     ChangeColor([_boxes[0, 0], _boxes[1, 1], _boxes[2, 2]]);
                     // MessageBox.Show($"{_boxes[0, 0].Text} Win !!!");
                     lblResultMessage.Text = $"{_boxes[0, 0].Text}  Win !!!";
+
+                    if (_boxes[0, 0].Text == "X")
+                    {
+                        lblXWin.Text = $"{_boxes[0, 0].Text}{_countX++}";
+
+                    }
+                    else if (_boxes[0, 0].Text == "O")
+                    {
+                        lblOWin.Text = $"{_boxes[0, 0].Text}{_countY++}";
+                    }
 
                     return;
                 }
@@ -102,11 +141,22 @@ namespace TicTacTou
                     //MessageBox.Show($"{_boxes[2, 0].Text} Win !!!");
                     lblResultMessage.Text = $"{_boxes[2, 0].Text}  Win !!!";
 
+                    if (_boxes[2, 0].Text == "X")
+                    {
+                        lblXWin.Text = $"{_boxes[2, 0].Text}{_countX++}";
+
+                    }
+                    else if (_boxes[2, 0].Text == "O")
+                    {
+                        lblOWin.Text = $"{_boxes[2, 0].Text}{_countY++}";
+                    }
+                    
                     return;
                 }
-            }
-        }
 
+            }
+
+        }
         private void ChangeColor(Button[] button)
         {
             foreach (var box in button)
@@ -126,9 +176,17 @@ namespace TicTacTou
                     _boxes[i, j].BackColor = Color.AntiqueWhite;
                 }
             }
-
         }
 
-       
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
