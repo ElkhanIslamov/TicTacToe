@@ -1,0 +1,16 @@
+C:\Users\User\Desktop\TicTacTou\TicTacTou\obj\Debug\net8.0-windows\TicTacTou.Form1.resources
+C:\Users\User\Desktop\TicTacTou\TicTacTou\obj\Debug\net8.0-windows\TicTacTou.csproj.GenerateResource.cache
+C:\Users\User\Desktop\TicTacTou\TicTacTou\obj\Debug\net8.0-windows\TicTacTou.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\TicTacTou\TicTacTou\obj\Debug\net8.0-windows\TicTacTou.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\TicTacTou\TicTacTou\obj\Debug\net8.0-windows\TicTacTou.AssemblyInfo.cs
+C:\Users\User\Desktop\TicTacTou\TicTacTou\obj\Debug\net8.0-windows\TicTacTou.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\TicTacTou\TicTacTou\bin\Debug\net8.0-windows\TicTacTou.exe
+C:\Users\User\Desktop\TicTacTou\TicTacTou\bin\Debug\net8.0-windows\TicTacTou.deps.json
+C:\Users\User\Desktop\TicTacTou\TicTacTou\bin\Debug\net8.0-windows\TicTacTou.runtimeconfig.json
+C:\Users\User\Desktop\TicTacTou\TicTacTou\bin\Debug\net8.0-windows\TicTacTou.dll
+C:\Users\User\Desktop\TicTacTou\TicTacTou\bin\Debug\net8.0-windows\TicTacTou.pdb
+C:\Users\User\Desktop\TicTacTou\TicTacTou\obj\Debug\net8.0-windows\TicTacTou.dll
+C:\Users\User\Desktop\TicTacTou\TicTacTou\obj\Debug\net8.0-windows\refint\TicTacTou.dll
+C:\Users\User\Desktop\TicTacTou\TicTacTou\obj\Debug\net8.0-windows\TicTacTou.pdb
+C:\Users\User\Desktop\TicTacTou\TicTacTou\obj\Debug\net8.0-windows\TicTacTou.genruntimeconfig.cache
+C:\Users\User\Desktop\TicTacTou\TicTacTou\obj\Debug\net8.0-windows\ref\TicTacTou.dll
